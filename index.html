@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jornal | Feminismo</title>
+    <script src="https://kit.fontawesome.com/14cf6b8914.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="data">1970</div>
@@ -25,6 +26,7 @@
             <figcaption class="fig" style="background-color: #222;">Mulheres lutando pelo direito ao voto</figcaption>
         </figure>
     </section>
+    <div class="clear"></div>
     <h2>Quais são as reinvidicações desse novo movimento feminista?</h2>
     <footer>
         <figure class="float">
@@ -39,5 +41,35 @@
         5. Além da maior participação das mulheres em algumas áreas (como a da tecnologia e ciências).
         </p>
     </footer>
+    <div class="clear"></div>
+    <div id="bx-social-midia">
+        <div class="seta" onclick="socialMidia()">^</div>
+        <div class="social-midia">
+            <a href="https://www.instagram.com/josue_farias_pimentel/?hl=pt" target="_blank" id="insta"><i class="fab fa-instagram"></i></a>
+
+            <a href="https://www.facebook.com/josue.pimentel.106" target="_blank" id="face"><i class="fab fa-facebook-f"></i></a>
+
+            <a href="https://github.com/JosuePimentel" target="_blank" id="git"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+    <script>
+        let x = 0
+        function socialMidia(){
+            let insta = document.getElementById("insta")
+            let face = document.getElementById("face")
+            let git = document.getElementById("git")
+            if(x == 0){
+                insta.style.display = "block"
+                face.style.display = "block"
+                git.style.display = "block"
+                x++
+            }else{
+                insta.style.display = "none"
+                face.style.display = "none"
+                git.style.display = "none"
+                x--
+            }
+        }
+    </script>
 </body>
 </html>

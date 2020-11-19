@@ -16,6 +16,7 @@
 
 body{
     background-color: #000;
+    min-height: 100vh;
 }
 
 div.data{
@@ -88,6 +89,57 @@ footer p{
 
     font-size: 1.3em;
 }
+
+.clear{
+    clear: both;
+}
+
+#bx-social-midia{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    background-color: #000;
+}
+
+#bx-social-midia div.seta{
+    padding: 0px 0 10px;
+    font-size: 40px;
+    cursor: pointer;
+    animation-name: seta;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes seta{
+    25%{transform: translateY(5px);}
+    50%{transform: translateY(10px);}
+    75%{transform: translateY(-10px);}
+    100%{transform: translateY(-5px);}  
+}
+
+#bx-social-midia div.seta::selection{
+    background-color: transparent;
+    color: #fff;
+}
+
+.social-midia{
+    display: flex;
+    flex-direction: row;
+    transition: 0.5s;
+    padding: 20px;
+}
+
+a{
+    font-size: 30px;
+    padding-left: 15px;
+    text-decoration: none;
+    display: none;
+}
+
 /*Responsividade */
 @media all and (max-width: 1400px){
     header figure {
