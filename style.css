@@ -88,7 +88,13 @@ footer p{
     font-size: 1.3em;
 }
 /*Responsividade */
-@media all and (max-width: 1000px){
+@media all and (max-width: 1400px){
+    header figure {
+        width: 60%;
+    }
+}
+
+@media all and (max-width: 1300px){
     div.data{
         padding: 5px 10px;
     }
@@ -97,15 +103,19 @@ footer p{
     }
     header figure{
         width: 100%;
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: 100%;
+        grid-template-areas: "img cap";
     }
     header figure img{
-        width: 80%;
-        float: left;
+        width: 100%;
+        grid-area: img;
     }
     header figure figcaption{
-        float: right;
-        width: 20%;
-        height: 429px;
+        width: 100%;
+        height: 100%;
+        grid-area: cap;
 
         display: flex;
         justify-content: center;
@@ -120,5 +130,85 @@ footer p{
     }
     header p.float{
         padding: 0 10% 100px;
+    }
+    h2{
+        font-size: 3.5em; 
+    }
+    section p{
+        width: 100%;
+        min-height: 200px;
+    }
+    section figure{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: 100%;
+        grid-template-areas: "img2 cap2";
+    }
+    section figure img{
+        width: 100%;
+        grid-area: img2;
+    }
+    section figure figcaption{
+        width: 100%;
+        height: 100%;
+        grid-area: cap2;
+        padding: 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer figure{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: 100%;
+        grid-template-areas: "img3 cap3";
+    }
+    footer figure img{
+        width: 100%;
+        grid-area: img3;
+    }
+    footer figure figcaption{
+        width: 100%;
+        height: 100%;
+        grid-area: cap3;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer p{
+        width: 100%;
+        min-height: 200px;
+    }
+    footer p.float{
+        padding-top: 0;
+    }
+}
+@media all and (max-width: 800px){
+    div.title h1{
+        font-size: 2.2em;
+    }
+    header p{
+        font-size: 2.0em;
+    }
+    h2{
+        font-size: 2.0em; 
+    }
+    section p{
+        font-size: 1.2em;
+    }
+    footer p{
+        font-size: 1.2em;
+    }
+    .fig{
+        padding: 10px;
+    }
+}
+@media all and (max-width: 650px){
+    header figure, section figure, footer figure{
+        display: block;
     }
 }
