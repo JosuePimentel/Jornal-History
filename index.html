@@ -43,7 +43,7 @@
     </footer>
     <div class="clear"></div>
     <div id="bx-social-midia">
-        <div class="seta" onclick="socialMidia()">^</div>
+        <div class="seta" onclick="socialMidia()">-</div>
         <div class="social-midia">
             <a href="https://www.instagram.com/josue_farias_pimentel/?hl=pt" target="_blank" id="insta"><i class="fab fa-instagram"></i></a>
 
@@ -58,15 +58,18 @@
             let insta = document.getElementById("insta")
             let face = document.getElementById("face")
             let git = document.getElementById("git")
+            let social = document.querySelector("div.social-midia")
             if(x == 0){
                 insta.style.display = "block"
                 face.style.display = "block"
                 git.style.display = "block"
+                social.style.display = "flex"
                 x++
             }else{
                 insta.style.display = "none"
                 face.style.display = "none"
                 git.style.display = "none"
+                social.style.display = "none"
                 x--
             }
         }

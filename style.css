@@ -105,7 +105,7 @@ footer p{
 }
 
 #bx-social-midia div.seta{
-    margin: 0px 0 10px 40px;
+    margin: 15px 0 10px 40px;
     font-size: 40px;
     cursor: pointer;
     animation-name: seta;
@@ -116,7 +116,7 @@ footer p{
 
 @keyframes seta{
     from {transform: translateY(0px);}
-    50% {transform: translateY(-20px);}
+    50% {transform: translateY(-3px);}
     to{transform: translateY(0px);}
 }
 
@@ -126,10 +126,10 @@ footer p{
 }
 
 .social-midia{
-    display: flex;
     flex-direction: row;
     transition: 0.5s;
     padding: 20px;
+    display: none;
 }
 
 a{
