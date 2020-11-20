@@ -105,20 +105,19 @@ footer p{
 }
 
 #bx-social-midia div.seta{
-    padding: 0px 0 10px;
+    margin: 0px 0 10px 40px;
     font-size: 40px;
     cursor: pointer;
     animation-name: seta;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
 
 @keyframes seta{
-    25%{transform: translateY(5px);}
-    50%{transform: translateY(10px);}
-    75%{transform: translateY(-10px);}
-    100%{transform: translateY(-5px);}  
+    from {transform: translateY(0px);}
+    50% {transform: translateY(-20px);}
+    to{transform: translateY(0px);}
 }
 
 #bx-social-midia div.seta::selection{
@@ -135,7 +134,7 @@ footer p{
 
 a{
     font-size: 30px;
-    padding-left: 15px;
+    margin-left: 40px;
     text-decoration: none;
     display: none;
 }
