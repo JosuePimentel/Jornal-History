@@ -5,7 +5,7 @@
 ## Features
 - 💀 HTML - Estrutura visual do Jornal.
 - 👗 CSS - Um pouco de estilo.
-- 🧠 JS - Parte inteligente.
+- 🔌 JS - Parte inteligente.
 
 ## Pq?
 Essa página Web foi feita e usado em um trabalho escolar.
